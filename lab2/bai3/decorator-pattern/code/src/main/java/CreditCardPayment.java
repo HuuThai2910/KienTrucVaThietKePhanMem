@@ -1,13 +1,12 @@
 /*
- * @ (#) .java    1.0       
+ * @ (#) .java    1.0
  * Copyright (c)  IUH. All rights reserved.
  */
-package PACKAGE_NAME;
-/*
- * @description
- * @author: Huu Thai
- * @date:   
- * @version: 1.0
- */
-public class CreditCardPayment {
+
+// 2. Concrete Component (Phương thức thanh toán cơ bản)
+class CreditCardPayment implements Payment {
+    @Override
+    public void pay(double amount) {
+        System.out.println("Thanh toán $" + amount + " bằng Thẻ Tín Dụng.");
+    }
 }
